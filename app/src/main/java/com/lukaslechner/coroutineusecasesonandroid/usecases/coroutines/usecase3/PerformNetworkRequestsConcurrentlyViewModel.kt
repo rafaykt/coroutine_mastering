@@ -36,8 +36,8 @@ class PerformNetworkRequestsConcurrentlyViewModel(
         uiState.value=UiState.Loading
             try {
                 val api27 = viewModelScope.async{ mockApi.getAndroidVersionFeatures(27)}
-                    val api28 = viewModelScope.async{mockApi.getAndroidVersionFeatures(28)}
-                    val api29 = viewModelScope.async{mockApi.getAndroidVersionFeatures(29)}
+                val api28 = viewModelScope.async{mockApi.getAndroidVersionFeatures(28)}
+                val api29 = viewModelScope.async{mockApi.getAndroidVersionFeatures(29)}
                 viewModelScope.launch{
                     val arrayApi = awaitAll(api27, api28, api29)
                     uiState.value = UiState.Success(arrayApi)
