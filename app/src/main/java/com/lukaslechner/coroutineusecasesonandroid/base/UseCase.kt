@@ -63,48 +63,48 @@ const val useCase17Description =
 private val coroutinesUseCases =
     UseCaseCategory(
         "Coroutine Use Cases", listOf(
-            UseCase(
-                useCase1Description,
-                PerformSingleNetworkRequestActivity::class.java
-            ),
-            UseCase(
-                useCase2Description,
-                Perform2SequentialNetworkRequestsActivity::class.java
-            ),
-            UseCase(
-                useCase2UsingCallbacksDescription,
-                SequentialNetworkRequestsCallbacksActivity::class.java
-            ), UseCase(
-                useCase2UsingRxDescription,
-                SequentialNetworkRequestsRxActivity::class.java
-            ),
-            UseCase(
-                useCase3Description,
-                PerformNetworkRequestsConcurrentlyActivity::class.java
-            ),
-            UseCase(
-                useCase4Description,
-                VariableAmountOfNetworkRequestsActivity::class.java
-            ),
-            UseCase(
-                useCase5Description,
-                NetworkRequestWithTimeoutActivity::class.java
-            ),
-            UseCase(
-                useCase6Description,
-                RetryNetworkRequestActivity::class.java
-            ),
-            UseCase(
-                useCase7Description,
-                TimeoutAndRetryActivity::class.java
-            ),
-            UseCase(
-                useCase7UsingCallbacksDescription,
-                TimeoutAndRetryCallbackActivity::class.java
-            ), UseCase(
-                useCase7UsingRxDescription,
-                TimeoutAndRetryRxActivity::class.java
-            ),
+//            UseCase(
+//                useCase1Description,
+//                PerformSingleNetworkRequestActivity::class.java
+//            ),
+//            UseCase(
+//                useCase2Description,
+//                Perform2SequentialNetworkRequestsActivity::class.java
+//            ),
+//            UseCase(
+//                useCase2UsingCallbacksDescription,
+//                SequentialNetworkRequestsCallbacksActivity::class.java
+//            ), UseCase(
+//                useCase2UsingRxDescription,
+//                SequentialNetworkRequestsRxActivity::class.java
+//            ),
+//            UseCase(
+//                useCase3Description,
+//                PerformNetworkRequestsConcurrentlyActivity::class.java
+//            ),
+//            UseCase(
+//                useCase4Description,
+//                VariableAmountOfNetworkRequestsActivity::class.java
+//            ),
+//            UseCase(
+//                useCase5Description,
+//                NetworkRequestWithTimeoutActivity::class.java
+//            ),
+//            UseCase(
+//                useCase6Description,
+//                RetryNetworkRequestActivity::class.java
+//            ),
+//            UseCase(
+//                useCase7Description,
+//                TimeoutAndRetryActivity::class.java
+//            ),
+//            UseCase(
+//                useCase7UsingCallbacksDescription,
+//                TimeoutAndRetryCallbackActivity::class.java
+//            ), UseCase(
+//                useCase7UsingRxDescription,
+//                TimeoutAndRetryRxActivity::class.java
+//            ),
             UseCase(
                 useCase8Description,
                 RoomAndCoroutinesActivity::class.java
