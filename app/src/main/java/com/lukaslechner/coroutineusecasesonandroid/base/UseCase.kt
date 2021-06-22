@@ -63,10 +63,10 @@ const val useCase17Description =
 private val coroutinesUseCases =
     UseCaseCategory(
         "Coroutine Use Cases", listOf(
-//            UseCase(
-//                useCase1Description,
-//                PerformSingleNetworkRequestActivity::class.java
-//            ),
+            UseCase(
+                useCase1Description,
+                PerformSingleNetworkRequestActivity::class.java
+            ),
 //            UseCase(
 //                useCase2Description,
 //                Perform2SequentialNetworkRequestsActivity::class.java
