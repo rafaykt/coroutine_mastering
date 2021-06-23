@@ -17,6 +17,8 @@ class PerformSingleNetworkRequestViewModel(
 
         /**
          * Se trocar o escopo pra dispatcher main, o log do timber será diferente
+         * Isso acontece porque o viewmodelscope usa o Dispatchers.main.immediate se você não
+         * sobrescrever pelo dispatchers.main
          * */
 //        val job = viewModelScope.launch {
         val job = viewModelScope.launch(Dispatchers.Main) {
