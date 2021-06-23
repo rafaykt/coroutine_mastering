@@ -9,12 +9,15 @@ fun main() = runBlocking {
             /*yield()
             println("Operation number $index")
             Thread.sleep(100)*/
-            if(isActive) {
+            if (isActive) {
                 println("Operation number $index")
                 Thread.sleep(100)
-            }else{
-                println("Cancelling...")
-                throw CancellationException()
+            } else {
+                withContext(NonCancellable) {
+                    delay(100)
+                    println("Cancelling...")
+                    throw CancellationException()
+                }
             }
         }
     }
