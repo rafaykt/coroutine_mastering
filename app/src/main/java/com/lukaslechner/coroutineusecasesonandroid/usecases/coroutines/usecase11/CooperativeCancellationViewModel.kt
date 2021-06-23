@@ -13,7 +13,7 @@ class CooperativeCancellationViewModel(
     private val defaultDispatcher: CoroutineDispatcher = Dispatchers.Default
 ) : ViewModel() {
 
-    var calculationJob: Job()? = null
+    var calculationJob: Job? = null
     fun performCalculation(factorialOf: Int) {
         uiState.value = UiState.Loading
         calculationJob = viewModelScope.launch {
@@ -46,7 +46,7 @@ class CooperativeCancellationViewModel(
     }
 
     fun cancelCalculation() {
-        calculationJob?.cancel
+        calculationJob?.cancel()
     }
 
     fun uiState(): LiveData<UiState> = uiState
